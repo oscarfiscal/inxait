@@ -21,7 +21,7 @@ class HomeController extends Controller
 
 
     {
-        /*  $this->middleware('auth'); */
+         $this->middleware('auth');
         $this->user = $user;
     }
 
