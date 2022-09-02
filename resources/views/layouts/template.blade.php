@@ -287,15 +287,12 @@
   <script>
     /* abrir alerta cuando de click en el boton con la clase detalle */
     function objective(event, userWin) {
-
       event.preventDefault();
-
       Swal.fire({
         position: 'center',
         icon: "sucess",
         title: "Felicidades " + userWin.name + " " + userWin.last_name + " Has sido el ganador",
         confirmButtonText: 'Aww',
-
         showConfirmButton: true,
       }).then((result) => {
         if (result.isConfirmed) {
