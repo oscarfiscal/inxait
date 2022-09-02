@@ -38,7 +38,9 @@ class HomeController extends Controller
     {
         $this->user->create($request->all());
        
-        return view('welcome');
+        return redirect()->route('home');
+       
+      
     }
 
     public function index()
